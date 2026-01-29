@@ -15,9 +15,8 @@ studying Java & C++
 
 ## studying NOW
 
-- java (to enter the dev's market)
-- glsl
-- linear algebra and quantum physics (i dont really know why just yes lol)
+- glsl & opengl
+- linear algebra and vetorial math
 - catholic faith, just trying to be better 🙏
 
 ---
