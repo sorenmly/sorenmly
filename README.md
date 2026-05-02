@@ -29,9 +29,7 @@ currently somewhere between a segfault and a grace.
 
 ## github
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=sorenmly)](https://github.com/sorenmly/github-readme-stats)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sorenmly&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=ffffff&text_color=aaaaaa)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
 ---
 
