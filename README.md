@@ -9,8 +9,6 @@ currently somewhere between a segfault and a grace.
 
 programmer && musicist && gamedev
 
-![Overall Statistics](https://lastly.nisarga.me/api/overall?username=sorenseg&period=overall)
-
 ---
 
 ## languages i use
