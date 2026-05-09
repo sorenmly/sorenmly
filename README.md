@@ -9,7 +9,7 @@ currently somewhere between a segfault and a grace.
 
 programmer && musicist && gamedev
 
-![alt text](https://github-readme-lastfm-stats.netlify.app/.netlify/functions/card?user=sorenseg&OPTIONS)
+![alt text](https://github-readme-lastfm-stats.netlify.app/.netlify/functions/card?user=sorenseg&theme=dark)
 
 ---
 
