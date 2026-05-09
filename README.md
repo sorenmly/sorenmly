@@ -7,7 +7,9 @@ c, c++, opengl, math, phylosophy & rock/metal music
 builder of small things. lover of low-level code and old prayers. 
 currently somewhere between a segfault and a grace.
 
-programmer && gamedev
+programmer && musicist && gamedev
+
+![alt text](https://github-readme-lastfm-stats.netlify.app/.netlify/functions/card?user=sorenseg&OPTIONS)
 
 ---
 
