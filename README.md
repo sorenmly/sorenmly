@@ -9,6 +9,7 @@ currently somewhere between a segfault and a grace.
 
 programmer && musicist && gamedev
 
+![Now Playing](assets/now-playing.svg)
 ---
 
 ## languages i use
