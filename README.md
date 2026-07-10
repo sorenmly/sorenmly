@@ -37,5 +37,8 @@ programmer && musicist && gamedev
 ---
 
 \**M/L/Y φ — it was real. not just a delusion of the early mornings.*
-![Now Playing](assets/now-playing.svg) <- vibecoded this... cant program in python srr
+![Now Playing](assets/now-playing.svg)
+
+/\\
+vibecoded. cant program in python srr :pray:
 
