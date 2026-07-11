@@ -1,0 +1,91 @@
+<svg width="920" height="460" viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <style>
+      .prompt { fill: #58a6ff; }
+      .out    { fill: #7ee787; }
+      .cmt    { fill: #8b949e; }
+      .txt    { fill: #c9d1d9; }
+      .accent { fill: #ffa657; }
+      .art    { fill: #7ee787; }
+      .music  { fill: #d2a8ff; }
+    </style>
+  </defs>
+
+  <!-- window -->
+  <rect x="0" y="0" width="920" height="460" rx="14" fill="#0d1117"/>
+  <rect x="0" y="0" width="920" height="42" rx="14" fill="#161b22"/>
+  <rect x="0" y="28" width="920" height="14" fill="#161b22"/>
+  <circle cx="26" cy="21" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="21" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="21" r="7" fill="#27c93f"/>
+  <text x="460" y="26" text-anchor="middle" font-size="13" class="cmt">sorenmly@arch ~ %</text>
+
+  <!-- ASCII ART (left column) -->
+  <text x="30" y="70" font-size="7.5" class="art" xml:space="preserve">
+    <tspan x="30" dy="0">                          -####%%%%###*                    </tspan>
+    <tspan x="30" dy="9">                       #%@##############@%#:               </tspan>
+    <tspan x="30" dy="9">                    ##@###############====##%#             </tspan>
+    <tspan x="30" dy="9">                  ##%################*====####@#           </tspan>
+    <tspan x="30" dy="9">                 #@##################====######@%+         </tspan>
+    <tspan x="30" dy="9">                 #@##################====########@#        </tspan>
+    <tspan x="30" dy="9">                 *@##################====########@#        </tspan>
+    <tspan x="30" dy="9">                  %##################===+#########         </tspan>
+    <tspan x="30" dy="9">                  ###################===########@#         </tspan>
+    <tspan x="30" dy="9">                  ###################===########%          </tspan>
+    <tspan x="30" dy="9">                  ###################===#######@#          </tspan>
+    <tspan x="30" dy="9">                  #########=-----....-=@#######@#          </tspan>
+    <tspan x="30" dy="9">                  #########---@@@@*--=--.-######           </tspan>
+    <tspan x="30" dy="9">                  ####%#**@---@*******#-.*####@#           </tspan>
+    <tspan x="30" dy="9">                  #@******+---********%-.@*@##@#           </tspan>
+    <tspan x="30" dy="9">                  @*******=*%@@@%%****@--@***@@*           </tspan>
+    <tspan x="30" dy="9">                 #@#@###############====*@#***#            </tspan>
+    <tspan x="30" dy="9">                ####################=====####@#*           </tspan>
+    <tspan x="30" dy="9">               #@@@.. ...... .. ....-@@@@@####%#           </tspan>
+    <tspan x="30" dy="9">               %@=.                         ...@@@#        </tspan>
+    <tspan x="30" dy="9">              #*=@.                             .@#        </tspan>
+    <tspan x="30" dy="9">             #===@.                             .@#        </tspan>
+    <tspan x="30" dy="9">            +@===..                             .@#        </tspan>
+    <tspan x="30" dy="9">            #@===.                              .@#        </tspan>
+    <tspan x="30" dy="9">            #===@.                              .@#        </tspan>
+    <tspan x="30" dy="9">           +@===@                               .@#        </tspan>
+    <tspan x="30" dy="9">           #@===+                               .@#        </tspan>
+    <tspan x="30" dy="9">           #@===.   ..                          .@#        </tspan>
+    <tspan x="30" dy="9">           #====. *@@@@@                        .%#        </tspan>
+    <tspan x="30" dy="9">           #===+..@@@@@@.                 .@.@@..##        </tspan>
+    <tspan x="30" dy="9">           %===%..-===.                   @@%@@@.*#        </tspan>
+    <tspan x="30" dy="9">           %===@%%%@@@@@@@%=:...          .+@@-..+#        </tspan>
+    <tspan x="30" dy="9">          +@===%..:===:.        .......*@@@@*.....#        </tspan>
+    <tspan x="30" dy="9">          *@===@%##+=-......              .===-. .#        </tspan>
+    <tspan x="30" dy="9">          #@==@====================+#@@@@#====....#        </tspan>
+    <tspan x="30" dy="9">          #@=%===================================@#        </tspan>
+    <tspan x="30" dy="9">          #@%=======+@@====######%%@*==========@#*         </tspan>
+    <tspan x="30" dy="9">           ###%@@%#%***====#########==@*@===*@#            </tspan>
+  </text>
+
+  <!-- vertical divider -->
+  <line x1="330" y1="60" x2="330" y2="420" stroke="#21262d" stroke-width="1"/>
+
+  <!-- info (right column, fastfetch style) -->
+  <text x="360" y="76" font-size="14" xml:space="preserve">
+    <tspan x="360" dy="0" class="prompt">$ whoami</tspan>
+    <tspan x="360" dy="20" class="out">&gt; soren</tspan>
+    <tspan x="360" dy="20" class="txt">  c &amp; c++ dev</tspan>
+
+    <tspan x="360" dy="30" class="prompt">$ lastfm --now-playing</tspan>
+    <tspan x="360" dy="20" class="music">&gt; tocando agora: Milton Nascimento &amp; Lô Borges…</tspan>
+
+    <tspan x="360" dy="30" class="prompt">$ git log --oneline -3</tspan>
+    <tspan x="360" dy="20" class="txt">&gt; sem commits recentes</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; sem commits recentes</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; sem commits recentes</tspan>
+
+    <tspan x="360" dy="30" class="prompt">$ cat links.txt</tspan>
+    <tspan x="360" dy="20" class="txt">github.com/sorenmly</tspan>
+  </text>
+
+  <!-- cursor -->
+  <text x="360" y="360" font-size="14" class="prompt">$<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></text>
+  <rect x="370" y="347" width="9" height="15" fill="#c9d1d9">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
