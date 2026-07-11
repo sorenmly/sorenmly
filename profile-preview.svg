@@ -1,4 +1,4 @@
-<svg width="640" height="500" viewBox="0 0 640 500" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+<svg width="920" height="460" viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
   <defs>
     <style>
       .prompt { fill: #58a6ff; }
@@ -12,52 +12,80 @@
   </defs>
 
   <!-- window -->
-  <rect x="0" y="0" width="640" height="500" rx="14" fill="#0d1117"/>
-  <rect x="0" y="0" width="640" height="42" rx="14" fill="#161b22"/>
-  <rect x="0" y="28" width="640" height="14" fill="#161b22"/>
+  <rect x="0" y="0" width="920" height="460" rx="14" fill="#0d1117"/>
+  <rect x="0" y="0" width="920" height="42" rx="14" fill="#161b22"/>
+  <rect x="0" y="28" width="920" height="14" fill="#161b22"/>
   <circle cx="26" cy="21" r="7" fill="#ff5f56"/>
   <circle cx="50" cy="21" r="7" fill="#ffbd2e"/>
   <circle cx="74" cy="21" r="7" fill="#27c93f"/>
-  <text x="320" y="26" text-anchor="middle" font-size="13" class="cmt">testuser@arch ~ %</text>
+  <text x="460" y="26" text-anchor="middle" font-size="13" class="cmt">__USERNAME__@arch ~ %</text>
 
-  <!-- mini ASCII art: Hatty Hattington -->
-  <text x="320" y="76" text-anchor="middle" font-size="12" class="art" xml:space="preserve">
-    <tspan x="320" dy="0">     .-'''-.</tspan>
-    <tspan x="320" dy="15">    /  ___  \</tspan>
-    <tspan x="320" dy="15">   |  | H |  |</tspan>
-    <tspan x="320" dy="15">    \ |___| /</tspan>
-    <tspan x="320" dy="15">     '-----'</tspan>
-    <tspan x="320" dy="15">       | |</tspan>
-    <tspan x="320" dy="15">     (o) (o)</tspan>
-    <tspan x="320" dy="15">        &gt;</tspan>
-    <tspan x="320" dy="15">       ===</tspan>
-    <tspan x="320" dy="15">      /   \</tspan>
-    <tspan x="320" dy="20" class="cmt">~ btw i use arch ~</tspan>
+  <!-- ASCII ART (left column) -->
+  <text x="30" y="70" font-size="7.5" class="art" xml:space="preserve">
+    <tspan x="30" dy="0">                          -####%%%%###*                    </tspan>
+    <tspan x="30" dy="9">                       #%@##############@%#:               </tspan>
+    <tspan x="30" dy="9">                    ##@###############====##%#             </tspan>
+    <tspan x="30" dy="9">                  ##%################*====####@#           </tspan>
+    <tspan x="30" dy="9">                 #@##################====######@%+         </tspan>
+    <tspan x="30" dy="9">                 #@##################====########@#        </tspan>
+    <tspan x="30" dy="9">                 *@##################====########@#        </tspan>
+    <tspan x="30" dy="9">                  %##################===+#########         </tspan>
+    <tspan x="30" dy="9">                  ###################===########@#         </tspan>
+    <tspan x="30" dy="9">                  ###################===########%          </tspan>
+    <tspan x="30" dy="9">                  ###################===#######@#          </tspan>
+    <tspan x="30" dy="9">                  #########=-----....-=@#######@#          </tspan>
+    <tspan x="30" dy="9">                  #########---@@@@*--=--.-######           </tspan>
+    <tspan x="30" dy="9">                  ####%#**@---@*******#-.*####@#           </tspan>
+    <tspan x="30" dy="9">                  #@******+---********%-.@*@##@#           </tspan>
+    <tspan x="30" dy="9">                  @*******=*%@@@%%****@--@***@@*           </tspan>
+    <tspan x="30" dy="9">                 #@#@###############====*@#***#            </tspan>
+    <tspan x="30" dy="9">                ####################=====####@#*           </tspan>
+    <tspan x="30" dy="9">               #@@@.. ...... .. ....-@@@@@####%#           </tspan>
+    <tspan x="30" dy="9">               %@=.                         ...@@@#        </tspan>
+    <tspan x="30" dy="9">              #*=@.                             .@#        </tspan>
+    <tspan x="30" dy="9">             #===@.                             .@#        </tspan>
+    <tspan x="30" dy="9">            +@===..                             .@#        </tspan>
+    <tspan x="30" dy="9">            #@===.                              .@#        </tspan>
+    <tspan x="30" dy="9">            #===@.                              .@#        </tspan>
+    <tspan x="30" dy="9">           +@===@                               .@#        </tspan>
+    <tspan x="30" dy="9">           #@===+                               .@#        </tspan>
+    <tspan x="30" dy="9">           #@===.   ..                          .@#        </tspan>
+    <tspan x="30" dy="9">           #====. *@@@@@                        .%#        </tspan>
+    <tspan x="30" dy="9">           #===+..@@@@@@.                 .@.@@..##        </tspan>
+    <tspan x="30" dy="9">           %===%..-===.                   @@%@@@.*#        </tspan>
+    <tspan x="30" dy="9">           %===@%%%@@@@@@@%=:...          .+@@-..+#        </tspan>
+    <tspan x="30" dy="9">          +@===%..:===:.        .......*@@@@*.....#        </tspan>
+    <tspan x="30" dy="9">          *@===@%##+=-......              .===-. .#        </tspan>
+    <tspan x="30" dy="9">          #@==@====================+#@@@@#====....#        </tspan>
+    <tspan x="30" dy="9">          #@=%===================================@#        </tspan>
+    <tspan x="30" dy="9">          #@%=======+@@====######%%@*==========@#*         </tspan>
+    <tspan x="30" dy="9">           ###%@@%#%***====#########==@*@===*@#            </tspan>
   </text>
 
-  <line x1="30" y1="240" x2="610" y2="240" stroke="#21262d" stroke-width="1"/>
+  <!-- vertical divider -->
+  <line x1="330" y1="60" x2="330" y2="420" stroke="#21262d" stroke-width="1"/>
 
-  <!-- info -->
-  <text x="30" y="266" font-size="14" xml:space="preserve">
-    <tspan x="30" dy="0" class="prompt">$ whoami</tspan>
-    <tspan x="30" dy="20" class="out">&gt; Fulano de Tal</tspan>
-    <tspan x="30" dy="20" class="txt">  Dev Full Stack &amp; Linux Larper</tspan>
+  <!-- info (right column, fastfetch style) -->
+  <text x="360" y="76" font-size="14" xml:space="preserve">
+    <tspan x="360" dy="0" class="prompt">$ whoami</tspan>
+    <tspan x="360" dy="20" class="out">&gt; __NAME__</tspan>
+    <tspan x="360" dy="20" class="txt">  __ROLE__</tspan>
 
-    <tspan x="30" dy="30" class="prompt">$ lastfm --now-playing</tspan>
-    <tspan x="30" dy="20" class="music">&gt; tocando agora: Boards of Canada - Roygbiv</tspan>
+    <tspan x="360" dy="30" class="prompt">$ lastfm --now-playing</tspan>
+    <tspan x="360" dy="20" class="music">&gt; __LASTFM_LINE__</tspan>
 
-    <tspan x="30" dy="30" class="prompt">$ git log --oneline -3</tspan>
-    <tspan x="30" dy="20" class="txt">&gt; meu-repo: fix bug idiota</tspan>
-    <tspan x="30" dy="18" class="txt">&gt; outro-repo: add feature x</tspan>
-    <tspan x="30" dy="18" class="txt">&gt; dotfiles: rice terminal de novo</tspan>
+    <tspan x="360" dy="30" class="prompt">$ git log --oneline -3</tspan>
+    <tspan x="360" dy="20" class="txt">&gt; __COMMIT_1__</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; __COMMIT_2__</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; __COMMIT_3__</tspan>
 
-    <tspan x="30" dy="30" class="prompt">$ cat links.txt</tspan>
-    <tspan x="30" dy="20" class="txt">github.com/testuser - seusite.dev</tspan>
+    <tspan x="360" dy="30" class="prompt">$ cat links.txt</tspan>
+    <tspan x="360" dy="20" class="txt">__LINKS__</tspan>
   </text>
 
   <!-- cursor -->
-  <text x="30" y="472" font-size="14" class="prompt">$<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></text>
-  <rect x="40" y="459" width="9" height="15" fill="#c9d1d9">
+  <text x="360" y="360" font-size="14" class="prompt">$<animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></text>
+  <rect x="370" y="347" width="9" height="15" fill="#c9d1d9">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 </svg>
