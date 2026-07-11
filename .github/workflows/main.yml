@@ -27,6 +27,6 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add assets/now-playing.svg
-          git commit -m "Update Last.fm" || exit 0
+          git add profile.svg
+          git commit -m "Update profile console" || exit 0
           git push
