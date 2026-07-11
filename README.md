@@ -13,10 +13,7 @@ programmer && musicist && gamedev
 
 ## languages i use
 
-![C/C++](https://img.shields.io/badge/-C/C++-white?style=for-the-badge&logo=c&logoColor=white&color=black)
-![GameMaker](https://img.shields.io/badge/Gamemaker-black?style=for-the-badge&logo=gamemaker&logoColor=white&color=black)
-
-[![github stats](https://github-readme-stats-fast.vercel.app/api/top-langs/?username=sorenmly&theme=transparent)](https://github.com/sorenmly/github-readme-stats-fast)
+![Me](profile.svg)
 
 ---
 
@@ -37,8 +34,4 @@ programmer && musicist && gamedev
 ---
 
 \**M/L/Y φ — it was real. not just a delusion of the early mornings.*
-![Now Playing](assets/now-playing.svg)
-
-/\\
-vibecoded. cant program in python srr :pray:
 
