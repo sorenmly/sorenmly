@@ -9,10 +9,6 @@ currently somewhere between a segfault and a grace.
 
 programmer && musicist && gamedev
 
----
-
-## languages i use
-
 ![Me](profile.svg)
 
 ---
@@ -22,7 +18,7 @@ programmer && musicist && gamedev
 ![GLSL](https://img.shields.io/badge/GLSL%20%2F%20OpenGL-black?style=for-the-badge&logo=opengl&logoColor=white&color=black)
 
 - **GLSL & OpenGL** . light, shadow, and everything in between
-- **linear algebra & vector math** . that math that makes pixels move
+- **linear algebra & vector math** . that math yk
 - **the catholic faith** . just trying to be better.
 
 ---
