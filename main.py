@@ -101,15 +101,15 @@ def build_svg(replacements: dict[str, str]) -> str:
 def main() -> None:
     lastfm_api_key = os.environ.get("LASTFM_API_KEY")
     lastfm_username = os.environ.get("LASTFM_USERNAME")
-    github_username = os.environ.get("GITHUB_USERNAME")
+    github_username = "sorenmly"
     github_token = os.environ.get("GITHUB_TOKEN")
 
     # dados que voce pode trocar por variaveis de ambiente tambem, se quiser
-    name = os.environ.get("PROFILE_NAME", "Seu Nome Aqui")
-    role = os.environ.get("PROFILE_ROLE", "Desenvolvedor(a) Full Stack")
+    name = os.environ.get("PROFILE_NAME", "soren")
+    role = os.environ.get("PROFILE_ROLE", "c & c++ dev")
     links = os.environ.get(
         "PROFILE_LINKS",
-        f"github.com/{github_username or 'seu-usuario'} - seusite.dev",
+        f"github.com/{github_username or 'sorenmly'}",
     )
 
     if lastfm_api_key and lastfm_username:
