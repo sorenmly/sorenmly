@@ -105,8 +105,8 @@ def main() -> None:
     github_token = os.environ.get("GITHUB_TOKEN")
 
     # dados que voce pode trocar por variaveis de ambiente tambem, se quiser
-    name = os.environ.get("PROFILE_NAME", "soren")
-    role = os.environ.get("PROFILE_ROLE", "c & c++ dev")
+    name = os.environ.get("PROFILE_NAME", "sorenmly")
+    role = os.environ.get("PROFILE_ROLE", "opengl c & c++ dev; gamedev")
     links = os.environ.get(
         "PROFILE_LINKS",
         f"github.com/{github_username or 'sorenmly'}",
