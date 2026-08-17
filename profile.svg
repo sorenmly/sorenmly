@@ -72,7 +72,7 @@
     <tspan x="360" dy="20" class="txt">  opengl c &amp; c++ dev; gamedev</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ lastfm --now-playing</tspan>
-    <tspan x="360" dy="20" class="music">&gt; tocando agora: System of a Down - ATWA</tspan>
+    <tspan x="360" dy="20" class="music">&gt; ultima vez: King Crimson - Frame by Frame</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ git log --oneline -3</tspan>
     <tspan x="360" dy="20" class="txt">&gt; sem commits recentes</tspan>
