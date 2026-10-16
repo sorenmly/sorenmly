@@ -23,6 +23,7 @@ jobs:
         env:
           LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY}}
           LASTFM_USERNAME: ${{ secrets.LASTFM_USERNAME}}
+          HUB_TOKEN: ${{ secrets.HUB_TOKEN}}
 
       - run: |
           git config user.name github-actions
