@@ -102,7 +102,7 @@ def main() -> None:
     lastfm_api_key = os.environ.get("LASTFM_API_KEY")
     lastfm_username = os.environ.get("LASTFM_USERNAME")
     github_username = "sorenmly"
-    github_token = os.environ.get("GITHUB_TOKEN")
+    github_token = os.environ.get("HUB_TOKEN")
 
     # dados que voce pode trocar por variaveis de ambiente tambem, se quiser
     name = os.environ.get("PROFILE_NAME", "sorenmly")
