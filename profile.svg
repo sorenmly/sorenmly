@@ -72,12 +72,12 @@
     <tspan x="360" dy="20" class="txt">  opengl c &amp; c++ dev; gamedev</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ lastfm --now-playing</tspan>
-    <tspan x="360" dy="20" class="music">&gt; tocando agora: Os Mutantes - Hey Boy</tspan>
+    <tspan x="360" dy="20" class="music">&gt; ultima vez: Os Mutantes - Preciso Urgentement…</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ git log --oneline -3</tspan>
-    <tspan x="360" dy="20" class="txt">&gt; sem commits recentes</tspan>
-    <tspan x="360" dy="18" class="txt">&gt; sem commits recentes</tspan>
-    <tspan x="360" dy="18" class="txt">&gt; sem commits recentes</tspan>
+    <tspan x="360" dy="20" class="txt">&gt; s.eng: Project architeture defined and fold…</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; s.eng: -- project start --</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; s.eng: Add window and log classes. Game Loo…</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ cat links.txt</tspan>
     <tspan x="360" dy="20" class="txt">github.com/sorenmly</tspan>
