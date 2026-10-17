@@ -78,9 +78,9 @@
     <tspan x="360" dy="20" class="music">&gt; ultima vez: Os Mutantes - Le premier bonheur…</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ git log --oneline -3</tspan>
-    <tspan x="360" dy="20" class="txt">&gt; sorenmly: Refactor main.py for improved fun…</tspan>
-    <tspan x="360" dy="18" class="txt">&gt; s.eng: Project architeture defined and fold…</tspan>
-    <tspan x="360" dy="18" class="txt">&gt; s.eng: -- project start --</tspan>
+    <tspan x="360" dy="20" class="txt">&gt; sorenmly: Include HUB_TOKEN in GitHub Actio…</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; sorenmly: Fix typo in environment variable…</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; sorenmly: Refactor main.py for improved fun…</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ cat links.txt</tspan>
     <tspan x="360" dy="20" class="txt">github.com/sorenmly</tspan>
