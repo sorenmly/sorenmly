@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import html
+import base64
 import requests
 
 TEMPLATE_PATH = os.environ.get("TEMPLATE_PATH", "profile-template.svg")
@@ -11,6 +12,23 @@ OUTPUT_PATH = os.environ.get("OUTPUT_PATH", "profile.svg")
 
 LASTFM_API_URL = "https://ws.audioscrobbler.com/2.0/"
 GITHUB_API_URL = "https://api.github.com"
+
+# tamanho maximo da capa baixada (evita SVG gigante)
+MAX_COVER_BYTES = 150_000
+
+# hash do placeholder "sem capa" que o Last.fm devolve
+LASTFM_EMPTY_COVER_HASH = "2a96cbd8b46e442fc41c2b86b821562f"
+
+# fallback: quadrado escuro com uma nota musical
+_FALLBACK_COVER_SVG = (
+    '<svg xmlns="http://www.w3.org/2000/svg" width="174" height="174">'
+    '<rect width="174" height="174" fill="#1f2430"/>'
+    '<text x="87" y="115" font-size="90" text-anchor="middle" fill="#6b7280" '
+    'font-family="sans-serif">&#9835;</text></svg>'
+)
+FALLBACK_COVER = "data:image/svg+xml;base64," + base64.b64encode(
+    _FALLBACK_COVER_SVG.encode("utf-8")
+).decode("ascii")
 
 
 def esc(text: str) -> str:
@@ -30,8 +48,41 @@ def first_line(message: str) -> str:
     return lines[0] if lines else "(sem mensagem)"
 
 
-def get_lastfm_now_playing(api_key: str, username: str) -> str:
-    """Retorna uma linha tipo 'Artista - Musica' (ou aviso se nao achar nada)."""
+def pick_cover_url(track: dict) -> str | None:
+    """Escolhe a melhor capa da lista 'image' do Last.fm (prefere large, depois extralarge)."""
+    images = {img.get("size"): img.get("#text", "") for img in track.get("image", [])}
+    for size in ("large", "extralarge", "medium"):
+        url = images.get(size)
+        if url and LASTFM_EMPTY_COVER_HASH not in url:
+            return url
+    return None
+
+
+def fetch_cover_data_uri(url: str | None) -> str:
+    """Baixa a capa e devolve como data URI base64 (ou o fallback se algo der errado)."""
+    if not url:
+        return FALLBACK_COVER
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        content = resp.content
+        if not content or len(content) > MAX_COVER_BYTES:
+            print(f"[lastfm] capa vazia ou grande demais ({len(content)} bytes)", file=sys.stderr)
+            return FALLBACK_COVER
+
+        mime = resp.headers.get("Content-Type", "image/jpeg").split(";")[0].strip()
+        if not mime.startswith("image/"):
+            mime = "image/jpeg"
+
+        b64 = base64.b64encode(content).decode("ascii")
+        return f"data:{mime};base64,{b64}"
+    except requests.RequestException as e:
+        print(f"[lastfm] erro ao baixar capa: {e}", file=sys.stderr)
+        return FALLBACK_COVER
+
+
+def get_lastfm_now_playing(api_key: str, username: str) -> tuple[str, str]:
+    """Retorna (linha 'Artista - Musica', capa como data URI)."""
     params = {
         "method": "user.getrecenttracks",
         "user": username,
@@ -45,7 +96,7 @@ def get_lastfm_now_playing(api_key: str, username: str) -> str:
         data = resp.json()
         tracks = data.get("recenttracks", {}).get("track", [])
         if not tracks:
-            return "nada tocado recentemente"
+            return "nada tocado recentemente", FALLBACK_COVER
 
         track = tracks[0]
         artist = track.get("artist", {}).get("#text", "artista desconhecido")
@@ -53,13 +104,15 @@ def get_lastfm_now_playing(api_key: str, username: str) -> str:
         now_playing = track.get("@attr", {}).get("nowplaying") == "true"
 
         prefix = "tocando agora: " if now_playing else "ultima vez: "
-        return truncate(f"{prefix}{artist} - {name}")
+        line = truncate(f"{prefix}{artist} - {name}")
+        cover = fetch_cover_data_uri(pick_cover_url(track))
+        return line, cover
     except requests.RequestException as e:
         print(f"[lastfm] erro ao buscar dados: {e}", file=sys.stderr)
-        return "last.fm indisponivel no momento"
+        return "last.fm indisponivel no momento", FALLBACK_COVER
     except (KeyError, IndexError, ValueError, AttributeError) as e:
         print(f"[lastfm] resposta inesperada: {e}", file=sys.stderr)
-        return "sem dados do last.fm"
+        return "sem dados do last.fm", FALLBACK_COVER
 
 
 def fetch_commit_message(repo_full_name: str, sha: str, headers: dict) -> str | None:
@@ -141,10 +194,10 @@ def main() -> None:
     links = os.environ.get("PROFILE_LINKS", f"github.com/{github_username}")
 
     if lastfm_api_key and lastfm_username:
-        lastfm_line = get_lastfm_now_playing(lastfm_api_key, lastfm_username)
+        lastfm_line, cover = get_lastfm_now_playing(lastfm_api_key, lastfm_username)
     else:
         print("[lastfm] LASTFM_API_KEY ou LASTFM_USERNAME nao definidos, pulando.", file=sys.stderr)
-        lastfm_line = "last.fm nao configurado"
+        lastfm_line, cover = "last.fm nao configurado", FALLBACK_COVER
 
     commits = get_recent_commits(github_username, github_token)
 
@@ -157,6 +210,7 @@ def main() -> None:
         "__NAME__": name,
         "__ROLE__": role,
         "__LASTFM_LINE__": lastfm_line,
+        "__COVER__": cover,
         "__COMMIT_1__": commits[0],
         "__COMMIT_2__": commits[1],
         "__COMMIT_3__": commits[2],
