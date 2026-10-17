@@ -78,9 +78,9 @@
     <tspan x="360" dy="20" class="music">&gt; ultima vez: Boris - Feedbacker, Part 1</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ git log --oneline -3</tspan>
-    <tspan x="360" dy="20" class="txt">&gt; sorenmly: Update profile-template.svg</tspan>
+    <tspan x="360" dy="20" class="txt">&gt; sorenmly: Enhance cover image handling with…</tspan>
+    <tspan x="360" dy="18" class="txt">&gt; sorenmly: Update profile-template.svg</tspan>
     <tspan x="360" dy="18" class="txt">&gt; sorenmly: Include HUB_TOKEN in GitHub Actio…</tspan>
-    <tspan x="360" dy="18" class="txt">&gt; sorenmly: Fix typo in environment variable…</tspan>
 
     <tspan x="360" dy="30" class="prompt">$ cat links.txt</tspan>
     <tspan x="360" dy="20" class="txt">github.com/sorenmly</tspan>
